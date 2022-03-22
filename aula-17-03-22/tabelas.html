@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula 17/03 - Tabelas</title>
+    </head>
+
+    <body>
+        <h1>Tabelas</h1>
+        <!--Nas tabelas os títulos ficam nas colunas e os valores nas linhas-->
+        <table border="2px">
+            <!--O número de th e td deve ser igual-->
+            <thead>
+                <!--Cabeçalho da tabela-->
+                <tr>
+                    <!--table row ou linha da tabela-->
+                    <th>Nome</th> <!--coluna da cabeçalho-->
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Magdalena</td> <!--coluna da célula-->
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>Fulano</td>
+                    <td>50</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td>Total de idade</td>
+                <td>77</td>
+            </tfoot>
+        </table>
+
+        <hr>
+
+        <table border="2px"> <!--tabela com estrutura semântica simplificada-->
+            <!--O número de th e td deve ser igual-->
+                <!--Cabeçalho da tabela-->
+                <tr>
+                    <!--table row ou linha da tabela-->
+                    <th>Nome</th> <!--coluna da cabeçalho-->
+                    <th>Idade</th>
+                    <th>Cidade</th>
+                </tr>
+                <tr>
+                    <td>Magdalena</td> <!--coluna da célula-->
+                    <td>27</td>
+                    <td rowspan="2">Agrestina</td> <!--rowspan mescla duas ou mais linhas-->
+                </tr>
+                <tr>
+                    <td>Fulano</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Total de idade</td>
+                    <td colspan="2">77</td> <!--colspan mescla duas ou mais colunas-->
+                </tr>
+                <hr>
+                <h2>Iframe</h2>
+                <iframe src="https://www.growdev.com.br/" frameborder="300%"></iframe> <!--o iframe insere um display de vídeo da origem desejada-->
+        </table>
+    </body>
+
+</html>
